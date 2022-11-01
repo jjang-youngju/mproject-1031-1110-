@@ -10,8 +10,29 @@ body {
   width: 300px;
   height: 80px;
 }
+.logo2_img img {
+  width: 100%;
+  height: 300px;
+}
+.main{
+  text-align: center;
+}
+.tour_line{
+  width: 1500px;
+  height: 700px;
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 15px;
+}
+.tour img{
+  margin-top: 100px;
+  width: 1400px;
+  height: 500px;
+  text-align: center;
+}
 
-#menu {
+
+
+/* #menu {
   width: 100%;
   height: 80px;
   position: relative;
@@ -52,9 +73,4 @@ transition: 2s;*/
   height: 240px;
   /* transition-property: height;
 transition: 2s;  */
-}
-
-.logo2_img img {
-  width: 100%;
-  height: 500px;
-}
+} */
