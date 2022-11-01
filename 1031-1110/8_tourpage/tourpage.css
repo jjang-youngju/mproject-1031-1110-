@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+}
+.logo_img img {
+  width: 300px;
+  height: 80px;
+}
+/* 헤더 다리사진 */
+.logo2_img img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.6;
+  position: relative;
+}
+.logo2_img h1 {
+  color: rgb(57, 56, 56);
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  top: 220px;
+  margin-left: 620px;
+}
+
+/* 메인 */
+.main_container {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.tour_wrap {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(237, 235, 235);
+}
+.tour_menu {
+  margin: 0 auto;
+  width: 800px;
+  height: 70px;
+  position: relative;
+  background-color: rgb(237, 235, 235);
+}
+.tour_list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: rgb(90, 90, 90);
+  font-size: 16px;
+  font-weight: 900;
+  width: 800px;
+  height: 70px;
+  text-align: center;
+}
+.tour_list li {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+.tour_line {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1800px;
+  height: 600px;
+  border: 1px solid rgb(47, 46, 46);
+  border-radius: 15px;
+}
+.tour_line h2 {
+  padding-left: 30px;
+  text-align: left;
+}
+.tour_line img {
+  margin-top: 50px;
+  width: 1200px;
+  height: 400px;
+  text-align: center;
+}
+.tour_img {
+  display: flex;
+  justify-content: space-around;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  border: none;
+  background: rgb(85, 147, 85);
+  border-radius: 10px;
+}
+.tour_img img {
+  width: 200px;
+  height: 150px;
+  margin-top: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.title {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700px;
+  color: white;
+}
+
+/* #menu {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#main_menu {
+  width: 1000px;
+  height: 80px;
+  position: relative;
+}
+#main_menu > li {
+  width: 200px;
+  height: 80px;
+  float: left;
+  line-height: 80px;
+  text-align: center;
+  background: pink;
+  position: relative;
+}
+/* sub 메뉴 안보이게 하기 */
+/* #main_menu .sub {
+  display: none;
+  -webkit-transition: all 1s;
+  /* transition-property: height; 
+transition: 2s;
+}
+#main_menu .sub li {
+  -webkit-transition: height 0.5s;
+}
+#main_menu:hover .sub {
+  display: block;
+  background: lightgoldenrodyellow;
+  height: 240px;
+  /* transition-property: height;
+transition: 2s; 
+} */
