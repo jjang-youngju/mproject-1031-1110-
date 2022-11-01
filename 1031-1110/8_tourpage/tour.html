@@ -52,9 +52,15 @@
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
       mapOption = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3, // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(36.3465796, 127.3951016), // 지도의 중심좌표
+        level: 8, // 지도의 확대 레벨
       };
+
+    // 대전역 36.331519 127.433637
+    // 우암사적공원  36.3478241, 127.4567871
+    // 동춘당 36.3649667, 127.4414303
+    // 도산서원 36.3436074, 127.3960741
+    // 둔산선사유적지 36.3607227, 127.3783182
 
     // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
     var map = new kakao.maps.Map(mapContainer, mapOption);
