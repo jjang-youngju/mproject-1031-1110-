@@ -28,6 +28,8 @@ body{
 .festival-img img{
     width: 300px;
     height: 300px;
+    border-radius: 20px;
+    margin: 0 30px;
 }
 .festival h2{
     width: 100px;
@@ -37,3 +39,11 @@ body{
     width: 100%;
     height: auto;
     display: flex;
+}
+.info .info-main{
+    font-size: 25px;
+    color: red;
+}
+.info h3{
+    
+}
