@@ -130,13 +130,8 @@ body {
 .spotImgSubtitle {
   flex-basis: 80%;
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-between;
-  margin-bottom: 40px;
-=======
   justify-content: space-around;
   padding-top: 40px;
->>>>>>> 5dcb944b9742519222b6c58c59b991c113e74407
 }
 /* 여행지 */
 .spotImgBoxWrap {
