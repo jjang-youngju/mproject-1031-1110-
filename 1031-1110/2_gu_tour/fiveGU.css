@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-image: url(../img/bg/sikjangsan.jpg);
+  background-size: cover;
+}
+/* header */
+.header {
+  width: 100%;
+  flex-basis: 17%;
+  background-color: cornflowerblue;
+}
+/* 2. 우리구투어 */
+.ourguTour {
+  width: 1200px;
+  height: 300px;
+  flex-basis: 20%;
+  position: relative;
+  margin: 0 auto;
+}
+/* .h1 {
+  width: 1200px;
+  margin: 0 auto;
+} */
+.ourguTour h1 {
+  color: rgb(57, 56, 56);
+  font-size: 50px;
+  /* font-weight: 900; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 55%; */
+  /* transform: translate(-55%, -55%); */
+  color: #fff;
+  text-align: center;
+  line-height: 300px;
+}
+/* center */
+.center {
+  flex-basis: 83%;
+  display: flex;
+  margin: 0 auto;
+  /* width: 1800px; */
+}
+/* 왼쪽 */
+.nav {
+  flex-basis: 15%;
+  /* background-color: lightcoral; */
+  /* width: 300px; */
+}
+/* 중간 */
+.section {
+  width: 1200px;
+  /* flex-basis: 70%; */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+/* 구 메뉴들 */
+.guTourHeader {
+  /* flex-basis: 10%; */
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.guTourHeaderFiveGu {
+  /* width: 100%; */
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: rgb(237, 235, 235);
+  /* background-color: skyblue ; */
+  /* color: #000; */
+  /* text-align: center; */
+}
+.guTourHeaderFiveGu:first-child {
+  border-left: none;
+}
+.guTourHeaderFiveGu:last-child {
+  border-right: none;
+}
+.guMenu {
+  width: 240px;
+  /* height: 77px; */
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.guMenu a img {
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+}
+.guMenu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.guMenu a:hover {
+  color: rgb(194, 78, 95);
+}
+/* 구 설명 */
+.guTourBody {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.guTourSpot {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.spotResturant {
+  flex-basis: 20%;
+  /* background-color: lightpink; */
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+.spot {
+  font-size: 25px;
+  font-weight: 800;
+  margin-right: 20px;
+}
+.spot a:hover {
+  color: rgb(11, 175, 77);
+}
+.resturant {
+  font-size: 25px;
+  font-weight: 800;
+}
+.resturant a:hover {
+  color: rgb(11, 175, 77);
+}
+.spot a {
+  text-decoration: none;
+  color: #000;
+}
+.resturant a {
+  text-decoration: none;
+  color: #000;
+}
+.spotImgSubtitle {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* 여행지 */
+.spotImgBox {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+/* 여행지 이미지 */
+/* 동구 */
+.daedongskypark {
+  background: url(../img/donggu/daedongskypark1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.uamhistoricpark {
+  background: url(../img/donggu/uamhistoricpark3.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.centralmarket {
+  background: url(../img/donggu/centralmarket.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.daejeonstation {
+  background: url(../img/donggu/daejeonstation1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.manin_mt {
+  background: url(../img/donggu/manin_mt1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sikjang_mt {
+  background: url(../img/donggu/sikjang_mt2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 중구 */
+.bomunsanmt {
+  background: url(../img/junggo/bomunsanmt2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.yeogyeongam {
+  background: url(../img/junggo/yeogyeongam3.gif) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.owarld {
+  background: url(../img/junggo/owarld1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.rootpark {
+  background: url(../img/junggo/rootpark1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sinteacher {
+  background: url(../img/junggo/sinteacher2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.bongsoru {
+  background: url(../img/junggo/Bongsoru2.jpg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 서구 */
+.yesul {
+  background: url(../img/seogu/yesul1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.dosan {
+  background: url(../img/seogu/dosan2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.prehistoricsite {
+  background: url(../img/seogu/prehistoricsite1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.jangtaesan {
+  background: url(../img/seogu/jangtaesan1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hanbat {
+  background: url(../img/seogu/hanbat1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.artgallery {
+  background: url(../img/seogu/artgallery1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 이미지 아래 글씨 */
+.spotSubtitle {
+  text-align: center;
+  background-color: rgb(11, 175, 77);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 30px;
+  font-weight: 800;
+  height: 40px;
+}
+/* 맛집 */
+.guTourResturant {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+/* 맛집 이미지 */
+/* 동구 */
+.mr_o {
+  background: url(../img/donggu/mr_o1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.bongi {
+  background: url(../img/donggu/bongi2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.taehwajang {
+  background: url(../img/donggu/taehwajang1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 중구 */
+.gwangcheon {
+  background: url(../img/junggo/gwangcheon2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sunsimdang {
+  background: url(../img/junggo/sunsimdang3.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cowhead {
+  background: url(../img/junggo/cowhead2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 서구 */
+.hare {
+  background: url(../img/seogu/hare3.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sanmakgol {
+  background: url(../img/seogu/sanmakgol2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.dongwon {
+  background: url(../img/seogu/dongwon2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 오른쪽 */
+.aside {
+  flex-basis: 15%;
+  /* background-color: brown; */
+  /* width: 300px; */
+}
+/* 아래 */
+.footer {
+  flex-basis: 10%;
+  background-color: lightgreen;
+}
