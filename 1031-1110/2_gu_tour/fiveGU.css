@@ -43,7 +43,6 @@ body {
   width: 100%;
   height: auto;
   background-color: rgb(237, 235, 235);
-  /* border: 1px solid black; */
 }
 .guTourHeader {
   /* flex-basis: 10%; */
@@ -81,11 +80,12 @@ body {
 }
 
 /* 문의 필요 */
-.guMenu li:hover > a {
+.guMenu a:hover > li {
   color: rgb(85, 147, 85);
 }
 .guMenu li:hover {
   background-color: #fff;
+  cursor: pointer;
 }
 /* center */
 .center {
@@ -139,9 +139,20 @@ body {
   height: 900px;
   border: 1px solid black;
   padding: 10px;
-
+  border-radius: 10px;
+  position: relative;
+}
+/* 확실ㄴㄴ 확인 필요 */
+.spotsection{
+  position: absolute;
+  width: 1100px;
+  height: 500px;
+  background-color: lightblue;
+  top: 200px;
+  left: 70px;
   border-radius: 10px;
 }
+/* 여기까지...*/
 .spotImgBox {
   display: flex;
   flex-direction: column;
@@ -311,6 +322,18 @@ body {
   background: url(../img/donggu/taehwajang1.jpeg) no-repeat center;
   background-size: cover;
 }
+.sindo{
+  background: url(../img/donggu/sindo.jpeg) no-repeat center;
+  background-size: cover;
+}
+.sannaedoljjajang{
+  background: url(../img/donggu/sannaedoljjajang1.jpeg) no-repeat left;
+  background-size: cover;
+}
+.baekjae{
+  background: url(../img/donggu/baekjae.jpeg) no-repeat left;
+  background-size: cover;
+}
 /* 중구 */
 .gwangcheon {
   background: url(../img/junggu/gwangcheon2.jpeg) no-repeat center;
@@ -322,6 +345,18 @@ body {
 }
 .cowhead {
   background: url(../img/junggu/cowhead2.jpeg) no-repeat center;
+  background-size: cover;
+}
+.banchan{
+  background: url(../img/junggu/banchan2.jpeg) no-repeat center;
+  background-size: cover;
+}
+.buksu{
+  background: url(../img/junggu/buksu2.jpeg) no-repeat center;
+  background-size: cover;
+}
+.kongnamiulzip{
+  background: url(../img/junggu/kongnamiulzip.jpeg) no-repeat center;
   background-size: cover;
 }
 /* 서구 */
@@ -337,6 +372,18 @@ body {
   background: url(../img/seogu/dongwon2.jpeg) no-repeat center;
   background-size: cover;
 }
+.dubutown{
+  background: url(../img/seogu/dubutown1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.subok{
+  background: url(../img/seogu/subok1.jpeg) no-repeat right;
+  background-size: cover;
+}
+.guksi{
+  background: url(../img/seogu/guksi.jpeg) no-repeat center;
+  background-size: cover;
+}
 /* 대덕구 */
 .galbat {
   background: url(../img/daedeokGu/galbat3.jpeg) no-repeat center;
@@ -350,6 +397,18 @@ body {
   background: url(../img/daedeokGu/sundae1.jpeg) no-repeat center;
   background-size: cover;
 }
+.mansusan{
+  background: url(../img/daedeokGu/mansusan.jpeg) no-repeat left;
+  background-size: cover;
+}
+.boboro{
+  background: url(../img/daedeokGu/boboro1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.bucu{
+  background: url(../img/daedeokGu/bucukalguksu1.png) no-repeat center;
+  background-size: cover;
+}
 /* 유성구 */
 .hongcheon {
   background: url(../img/useonggu/hongcheon2.jpeg) no-repeat center;
@@ -361,6 +420,18 @@ body {
 }
 .muk {
   background: url(../img/useonggu/muk1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.ibiga{
+  background: url(../img/useonggu/ibiga.jpeg) no-repeat center;
+  background-size: cover;
+}
+.gamnamu{
+  background: url(../img/useonggu/gamnamu.jpeg) no-repeat center;
+  background-size: cover;
+}
+.bulgogi{
+  background: url(../img/useonggu/bulgogi.jpeg) no-repeat center;
   background-size: cover;
 }
 /* 오른쪽 */
