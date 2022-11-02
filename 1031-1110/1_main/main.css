@@ -1,11 +1,8 @@
-body,
-div,
-ul {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 #container {
     width: 100%;
     height: auto;
@@ -78,6 +75,7 @@ ul {
     opacity: 1;
     width: 250px;
     top: 10px;
+    z-index: 1;
 }
 
 .menu-list li:hover ul li {
@@ -87,7 +85,9 @@ ul {
     line-height: 30px;
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: black;
+    background: lightgray;
+    opacity: 0.7;
 }
 
 /* 콘텐츠 메뉴 */
@@ -99,14 +99,56 @@ ul {
     width: 100%;
 }
 
-.slide {
-    width: 1200px;
+[name="slide"] {
+    display: none;
+}
+
+.slide-box {
+    width: 1900px;
     margin: 0 auto;
 }
 
-.slide img {
-    width: 1200px;
-    height: 300px;
+.slide-box img {
+    width: 1900px;
+    height: 500px;
+}
+
+.slide-box .slide-list {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+}
+.slide-box .slide-item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1900px;
+    transition: all .35s;
+}
+.slide-box .slide-item label{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slide-item div label .left{
+    left: 20px;
+    background-color: gray;
+    background-image: url(../img/mainimg/left.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+label .right{
+    right: 20px;
+    background-color: gray;
+    background-image: url(../img/mainimg/right.png);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 
 .title {
