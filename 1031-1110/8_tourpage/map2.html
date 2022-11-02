@@ -95,6 +95,7 @@
     3 : 도산서원 36.3436074, 127.3960741
     4 : 둔산선사유적지 36.3607227, 127.3783182
     */
+    //  좌표
     var positions = [
       new kakao.maps.LatLng(36.331519, 127.433637),
       new kakao.maps.LatLng(36.3478241, 127.4567871),
@@ -102,7 +103,7 @@
       new kakao.maps.LatLng(36.3436074, 127.3960741),
       new kakao.maps.LatLng(36.3607227, 127.3783182),
     ];
-
+    // 장소
     var places = [
       'https://place.map.kakao.com/7830504',
       'https://place.map.kakao.com/8027006',
@@ -110,6 +111,7 @@
       'https://place.map.kakao.com/12683395',
       'https://place.map.kakao.com/10679334',
     ];
+    // 이미지 넣어주기
     var images = [
       'https://lh5.googleusercontent.com/p/AF1QipO564CQNFtskz5Chi7YJhZpKw3eeK_ww2lEp5pC=w408-h306-k-no',
       'https://lh5.googleusercontent.com/p/AF1QipNldX_PRjAsFkzpG_Wzue6aNeMfM0gKA6tPuMZI=w408-h306-k-no',
@@ -155,11 +157,83 @@
         position: positions[i],
         content: content,
         xAnchor: 0.5, // 커스텀 오버레이의 x축 위치입니다. 1에 가까울수록 왼쪽에 위치합니다. 기본값은 0.5 입니다
-        yAnchor: 1.1, // 커스텀 오버레이의 y축 위치입니다. 1에 가까울수록 위쪽에 위치합니다. 기본값은 0.5 입니다
+        yAnchor: 1.14, // 커스텀 오버레이의 y축 위치입니다. 1에 가까울수록 위쪽에 위치합니다. 기본값은 0.5 입니다
       });
 
       // 커스텀 오버레이를 지도에 표시합니다
       mapCustomOverlay.setMap(map);
     }
+
+    // 출발 도착 마커
+
+    var startSrc =
+        'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/red_b.png', // 출발 마커이미지의 주소입니다
+      startSize = new kakao.maps.Size(50, 45), // 출발 마커이미지의 크기입니다
+      startOption = {
+        offset: new kakao.maps.Point(15, 43), // 출발 마커이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+      };
+
+    // 출발 마커 이미지를 생성합니다
+    var startImage = new kakao.maps.MarkerImage(
+      startSrc,
+      startSize,
+      startOption,
+    );
+
+    // 출발 마커가 표시될 위치입니다
+    var startPosition = new kakao.maps.LatLng(36.3316264, 127.434411);
+
+    // 출발 마커를 생성합니다
+    var startMarker = new kakao.maps.Marker({
+      map: map, // 출발 마커가 지도 위에 표시되도록 설정합니다
+      position: startPosition,
+      image: startImage, // 출발 마커이미지를 설정합니다
+    });
+
+    var arriveSrc =
+        'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/blue_b.png', // 도착 마커이미지 주소입니다
+      arriveSize = new kakao.maps.Size(50, 45), // 도착 마커이미지의 크기입니다
+      arriveOption = {
+        offset: new kakao.maps.Point(15, 43), // 도착 마커이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+      };
+
+    // 도착 마커 이미지를 생성합니다
+    var arriveImage = new kakao.maps.MarkerImage(
+      arriveSrc,
+      arriveSize,
+      arriveOption,
+    );
+
+    // 도착 마커가 표시될 위치입니다
+    var arrivePosition = new kakao.maps.LatLng(36.332326, 127.434211);
+
+    // 도착 마커를 생성합니다
+    var arriveMarker = new kakao.maps.Marker({
+      map: map, // 도착 마커가 지도 위에 표시되도록 설정합니다
+      position: arrivePosition,
+      image: arriveImage, // 도착 마커이미지를 설정합니다
+    });
+
+    // 선 잇기
+    var linePath = [
+      new kakao.maps.LatLng(36.331519, 127.433637),
+      new kakao.maps.LatLng(36.3478241, 127.4567871),
+      new kakao.maps.LatLng(36.3649667, 127.4414303),
+      new kakao.maps.LatLng(36.3436074, 127.3960741),
+      new kakao.maps.LatLng(36.3607227, 127.3783182),
+      new kakao.maps.LatLng(36.331519, 127.433637),
+    ];
+
+    // 지도에 표시할 선을 생성합니다
+    var polyline = new kakao.maps.Polyline({
+      path: linePath, // 선을 구성하는 좌표배열 입니다
+      strokeWeight: 5, // 선의 두께 입니다
+      strokeColor: '#696969', // 선의 색깔입니다
+      strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+      strokeStyle: 'solid', // 선의 스타일입니다
+    });
+
+    // 지도에 선을 표시합니다
+    polyline.setMap(map);
   </script>
 </html>
