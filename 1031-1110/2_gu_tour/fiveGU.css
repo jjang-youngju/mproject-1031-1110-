@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-image: url(../img/bg/sikjangsan.jpg);
+  background-image: url(../img/bg/sikjangsan.png);
   background-size: cover;
 }
 /* header */
@@ -47,6 +47,60 @@ body {
   text-align: center;
   line-height: 300px;
 }
+/* 구 메뉴들 */
+.gutourWrap {
+  width: 100%;
+  height: auto;
+  background-color: rgb(237, 235, 235);
+  /* border: 1px solid black; */
+}
+.guTourHeader {
+  /* flex-basis: 10%; */
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.guTourHeaderFiveGu {
+  /* width: 100%; */
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guMenu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 900;
+  width: 1200px;
+  height: 77px;
+}
+.guMenu li {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+  width: 240px;
+  text-align: center;
+}
+.guMenu a img {
+  width: 30px;
+  height: 30px;
+  padding-top: 25px;
+}
+.guMenu a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 문의 필요 */
+.guMenu li:hover > a {
+  color: rgb(11, 175, 77);
+}
+.guMenu li:hover {
+  background-color: #fff;
+}
 /* center */
 .center {
   flex-basis: 83%;
@@ -68,51 +122,7 @@ body {
   flex-direction: column;
   /* border: 1px solid black; */
 }
-/* 구 메뉴들 */
-.guTourHeader {
-  /* flex-basis: 10%; */
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.guTourHeaderFiveGu {
-  /* width: 100%; */
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  background-color: rgb(237, 235, 235);
-  /* background-color: skyblue ; */
-  /* color: #000; */
-  /* text-align: center; */
-}
-.guTourHeaderFiveGu:first-child {
-  border-left: none;
-}
-.guTourHeaderFiveGu:last-child {
-  border-right: none;
-}
-.guMenu {
-  width: 240px;
-  /* height: 77px; */
-  text-align: center;
-  margin: 20px;
-  font-size: 30px;
-  font-weight: 800;
-}
-.guMenu a img {
-  width: 30px;
-  height: 30px;
-  padding-top: 5px;
-}
-.guMenu a {
-  text-decoration: none;
-  color: #000;
-}
-
-.guMenu a:hover {
-  color: rgb(194, 78, 95);
-}
+/* 구 메뉴 원래 */
 /* 구 설명 */
 .guTourBody {
   width: 1200px;
@@ -124,11 +134,19 @@ body {
   display: flex;
   flex-direction: column;
 }
-.spotResturant {
+/* 여행지 & 맛집  */
+.spotResturantWrap {
+  width: 100%;
   flex-basis: 20%;
-  /* background-color: lightpink; */
+  margin: 0 auto;
+  /* margin: 10px 0 10px 0; */
+}
+.spotResturant {
+  width: 1200px;
+  list-style: none;
   display: flex;
-  margin: 10px 0 10px 0;
+  justify-content: space-around;
+  margin: 50px;
 }
 .spot {
   font-size: 25px;
@@ -218,7 +236,7 @@ body {
 }
 /* 중구 */
 .bomunsanmt {
-  background: url(../img/junggo/bomunsanmt2.jpeg) no-repeat center;
+  background: url(../img/junggu/bomunsanmt2.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -226,7 +244,7 @@ body {
   border-top-right-radius: 5px;
 }
 .yeogyeongam {
-  background: url(../img/junggo/yeogyeongam3.gif) no-repeat center;
+  background: url(../img/junggu/yeogyeongam3.gif) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -234,7 +252,7 @@ body {
   border-top-right-radius: 5px;
 }
 .owarld {
-  background: url(../img/junggo/owarld1.jpeg) no-repeat center;
+  background: url(../img/junggu/owarld1.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -242,7 +260,7 @@ body {
   border-top-right-radius: 5px;
 }
 .rootpark {
-  background: url(../img/junggo/rootpark1.jpeg) no-repeat center;
+  background: url(../img/junggu/rootpark1.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -250,7 +268,7 @@ body {
   border-top-right-radius: 5px;
 }
 .sinteacher {
-  background: url(../img/junggo/sinteacher2.jpeg) no-repeat center;
+  background: url(../img/junggu/sinteacher2.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -258,7 +276,7 @@ body {
   border-top-right-radius: 5px;
 }
 .bongsoru {
-  background: url(../img/junggo/Bongsoru2.jpg) no-repeat center;
+  background: url(../img/junggu/Bongsoru2.jpg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -314,6 +332,104 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+/* 대덕구 */
+.daecheonglake {
+  background: url(../img/daedeokGu/daecheonglake2.jpeg) no-repeat left;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Gyejokmt {
+  background: url(../img/daedeokGu/Gyejokmt2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.dongchundang {
+  background: url(../img/daedeokGu/dongchundang2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.ohaseu {
+  background: url(../img/daedeokGu/lohaseu2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cheongja {
+  background: url(../img/daedeokGu/cheongja.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sun {
+  background: url(../img/daedeokGu/sun1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 유성구 */
+.museum {
+  background: url(../img/useonggu/museum.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sutonggol {
+  background: url(../img/useonggu/sutonggol.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.expo {
+  background: url(../img/useonggu/expo2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hanbittap {
+  background: url(../img/useonggu/hanbittap.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.urimpark {
+  background: url(../img/useonggu/urimpark2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hyeonchungwon {
+  background: url(../img/useonggu/hyeonchungwon1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 /* 이미지 아래 글씨 */
 .spotSubtitle {
   text-align: center;
@@ -359,7 +475,7 @@ body {
 }
 /* 중구 */
 .gwangcheon {
-  background: url(../img/junggo/gwangcheon2.jpeg) no-repeat center;
+  background: url(../img/junggu/gwangcheon2.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -367,7 +483,7 @@ body {
   border-top-right-radius: 5px;
 }
 .sunsimdang {
-  background: url(../img/junggo/sunsimdang3.jpeg) no-repeat center;
+  background: url(../img/junggu/sunsimdang3.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -375,7 +491,7 @@ body {
   border-top-right-radius: 5px;
 }
 .cowhead {
-  background: url(../img/junggo/cowhead2.jpeg) no-repeat center;
+  background: url(../img/junggu/cowhead2.jpeg) no-repeat center;
   width: 350px;
   height: 350px;
   background-size: cover;
@@ -407,13 +523,63 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+/* 대덕구 */
+.galbat {
+  background: url(../img/daedeokGu/galbat3.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.meabong {
+  background: url(../img/daedeokGu/maebong1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sundae {
+  background: url(../img/daedeokGu/sundae1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* 유성구 */
+.hongcheon {
+  background: url(../img/useonggu/hongcheon2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.kkudeubaeng {
+  background: url(../img/useonggu/kkudeubaeng2.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.muk {
+  background: url(../img/useonggu/muk1.jpeg) no-repeat center;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 /* 오른쪽 */
 .aside {
   flex-basis: 15%;
   /* background-color: brown; */
   /* width: 300px; */
 }
-/* 아래 */
+/* footer */
 .footer {
   flex-basis: 10%;
   background-color: lightgreen;
