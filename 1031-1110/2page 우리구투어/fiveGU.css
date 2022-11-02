@@ -169,6 +169,8 @@ body {
 .spotImg img {
   width: 350px;
   height: 350px;
+  /* background: url(../img/동구/중앙시장1.jpeg);
+  background-size: cover; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
