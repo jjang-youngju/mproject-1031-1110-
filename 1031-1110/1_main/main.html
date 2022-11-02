@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
     <link rel="icon" href="../img/logo/daejeonlogo.png">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+
+<body onload=textchange()>
     <div id="container">
         <div id="header">
             <div class="header-main">
@@ -41,43 +43,8 @@
             </div>
         </div>
         <div id="content">
-            <div class="slide-main">
-                <div class="slide-box">
-                    <ul class="slide-list">
-                        <li class="slide-item">
-                            <div>
-                                <label for="slide04" class="left"></label>
-                                <label for="slide02" class="right"></label> 
-                                <a><img src="../img/bg/gyejoksan2.jpg"></a>
-                            </div>
-                        </li>
-                        <li class="slide-item">
-                            <div>
-                                <label for="slide01" class="left"></label>
-                                <label for="slide03" class="right"></label> 
-                                <a><img src="../img/mainimg/sikjjangsan.jpg"></a>
-                            </div>
-                        </li>
-                        <li class="slide-item">
-                            <div>
-                                <label for="slide02" class="left"></label>
-                                <label for="slide04" class="right"></label> 
-                                <a><img src="">3</a>
-                            </div>
-                        </li>
-                        <li class="slide-item">
-                            <div>
-                                <label for="slide03" class="left"></label>
-                                <label for="slide01" class="right"></label> 
-                                <a><img src="">4</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <input type="radio" name="slide" id="slide01" checked>
-                    <input type="radio" name="slide" id="slide02">
-                    <input type="radio" name="slide" id="slide03">
-                    <input type="radio" name="slide" id="slide04">
-                </div>
+            <div class="slider">
+                <img id="slider" src="../img/mainimg/sikjjangsan.jpg">
             </div>
             <div class="title">
                 <div class="title-list">
@@ -104,4 +71,22 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    var bang=0;
+    var bangbang;
+    function textchange(){
+        if(bang ==0){
+            document.getElementById("slider").src="../img/mainimg/sikjjangsan.jpg";
+            bang++;
+        }else if(bang ==1){
+            document.getElementById("slider").src="../img/mainimg/gye.jpg";
+            bang++;
+        }else{
+            document.getElementById("slider").src="3.png";
+            bang =0;
+        }
+        bangbang = setTimeout(textchange,1500);
+        
+    }
+</script>
 </html>
