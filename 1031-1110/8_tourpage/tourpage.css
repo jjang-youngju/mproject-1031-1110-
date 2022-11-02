@@ -63,17 +63,29 @@ body {
   text-align: center;
   position: relative;
 }
+.tour_list a {
+  text-decoration: none;
+  color: black;
+}
 .tour_line {
   margin: 0 auto;
   margin-top: 20px;
   width: 1800px;
-  height: 600px;
+  height: 1800px;
   border: 1px solid rgb(47, 46, 46);
   border-radius: 15px;
+}
+.thema_line {
+  width: 1800px;
+  height: 280px;
 }
 .tour_line h2 {
   padding-left: 30px;
   text-align: left;
+}
+.tour_line h2 a {
+  text-decoration: none;
+  color: black;
 }
 .tour_line img {
   margin-top: 50px;
@@ -85,23 +97,49 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.img {
+.image {
   width: 200px;
   height: 200px;
-  border: none;
+  /* border: 1px solid black; */
   background: rgb(85, 147, 85);
   border-radius: 10px;
 }
-.tour_img img {
+.img {
   width: 200px;
   height: 150px;
-  margin-top: 0;
   border-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.img1 {
+  background: url(../img/동구/대전역1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.img2 {
+  background: url(../img/동구/우암사적공원3.jpeg) no-repeat center;
+  background-size: cover;
+}
+.img3 {
+  background: url(../img/대덕구/동춘당1.jpeg) no-repeat center;
+  background-size: cover;
+}
+.img4 {
+  background: url(../img/서구/도산서원2.jpeg) no-repeat center;
+  background-size: cover;
+}
+.img5 {
+  background: url(../img/서구/둔산선사유적지2.jpeg) no-repeat
+    center;
+  background-size: cover;
+}
+/* .tour_img img {
+  width: 200px;
+  height: 150px;
+  margin-top: 0;
+  border-radius: 10px;
+} */
 .title {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 15px;
   font-weight: 700px;
   color: white;
