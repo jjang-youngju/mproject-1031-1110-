@@ -188,7 +188,7 @@ p {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-image: url(../img/mainimg/randmark.png);
+  background-image: url(../img/bg/expobridge.jpg);
   background-size: cover;
 }
 
@@ -202,7 +202,8 @@ p {
 
 .main-img h1 {
   font-size: 50px;
-  color: lightgreen;
+  font-family: '맑은고딕';
+  color: white;
   text-align: center;
   line-height: 500px;
 }
@@ -233,7 +234,7 @@ p {
   width: 880px;
   height: 302px;
   margin: 10px 20px;
-  border: 2px solid green;
+  border: 2px solid #afafaf;
   border-radius: 20px;
   padding: 20px 10px;
 }
