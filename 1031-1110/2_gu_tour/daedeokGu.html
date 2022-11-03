@@ -13,33 +13,33 @@
     <div class="container">
       <div class="top">
         <div class="header">header</div>
-        <div class="wrap">
-          <div class="ourguTour">
-            <div class="h1">
-              <h1>우리 구 투어</h1>
-            </div>
-          </div>
-          <!-- 구 메뉴바 -->
-          <div class="gutourWrap">
-            <div class="guTourHeader">
-              <div class="guTourHeaderFiveGu">
-                <ul class="guMenu">
-                  <a href="dongGu.html"> <li>동구</li> </a>
-                  <a href="jungGu.html"> <li>중구</li> </a>
-                  <a href="seoGu.html"><li>서구</li> </a>
-                  <a href="yuseongGu.html"><li>유성구</li> </a>
-                  <a href="daedeokGu.html"><li>대덕구</li> </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="center">
         <!-- 왼쪽 -->
         <div class="nav"></div>
         <!-- 중간 -->
         <div class="section">
+          <div class="wrap">
+            <div class="ourguTour">
+              <div class="h1">
+                <h1>우리 구 투어</h1>
+              </div>
+            </div>
+            <!-- 구 메뉴바 -->
+            <div class="gutourWrap">
+              <div class="guTourHeader">
+                <div class="guTourHeaderFiveGu">
+                  <ul class="guMenu">
+                    <a href="dongGu.html"> <li>동구</li> </a>
+                    <a href="jungGu.html"> <li>중구</li> </a>
+                    <a href="seoGu.html"><li>서구</li> </a>
+                    <a href="yuseongGu.html"><li>유성구</li> </a>
+                    <a href="daedeokGu.html"><li class="dae">대덕구</li> </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="guTourBody">
             <!-- 여행지 -->
             <div class="guTourSpot">
@@ -51,7 +51,7 @@
                 <div class="spotsection">
                   <!-- 뒤로 가기 -->
                   <div class="section-top">
-                    <a href="#">◀ Back to 여행지</a>
+                    <span onclick="doClose()">◀ Back to 여행지</span>
                   </div>
                   <!-- 소개 페이지 -->
                   <div class="section-bottom">
@@ -73,32 +73,55 @@
                     <div class="section-map" id="map"></div>
                   </div>
                 </div>
-                <!-- 불안... -->
                 <!-- 여행지 이미지 -->
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img daecheonglake"></div>
                     <div class="spotSubtitle">대청호</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img Gyejokmt"></div>
                     <div class="spotSubtitle">계족산</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img dongchundang"></div>
                     <div class="spotSubtitle">동춘당</div>
                   </div>
                 </div>
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img ohaseu"></div>
                     <div class="spotSubtitle">로하스 캠핑장</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img cheongja"></div>
                     <div class="spotSubtitle">청자마을</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div
+                    class="spotImgBox"
+                    data-tilt
+                    onclick="getTravelImgDetail()"
+                  >
                     <div class="img sun"></div>
                     <div class="spotSubtitle">태양마을</div>
                   </div>
@@ -112,33 +135,56 @@
               </div>
               <div class="spotImgBoxWrap">
                 <!-- 맛집 상세정보 -->
-                <div class="spotsection"></div>
-                <!-- 불안... -->
+                <div class="spotsection">
+                  <!-- 뒤로 가기 -->
+                  <div class="section-top">
+                    <span onclick="doClose()">◀ Back to 여행지</span>
+                  </div>
+                  <!-- 소개 페이지 -->
+                  <div class="section-bottom">
+                    <div class="section-img" id="img"></div>
+                    <div class="section-info">
+                      <div class="name">
+                        <span>NAME : </span>
+                        <span id="name"></span>
+                      </div>
+                      <div class="addr">
+                        <span>ADDRESS : </span>
+                        <span id="addr"></span>
+                      </div>
+                      <div class="phone">
+                        <span>NUMBER : </span>
+                        <span id="number"></span>
+                      </div>
+                    </div>
+                    <div class="section-map" id="map"></div>
+                  </div>
+                </div>
                 <!-- 맛집 이미지 -->
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img galbat"></div>
                     <div class="spotSubtitle">갈밭식당</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img meabong"></div>
                     <div class="spotSubtitle">매봉식당</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img sundae"></div>
                     <div class="spotSubtitle">오문창 순대국밥</div>
                   </div>
                 </div>
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img mansusan"></div>
                     <div class="spotSubtitle">만수산 칡냉면</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img boboro"></div>
                     <div class="spotSubtitle">보보로베이커리</div>
                   </div>
-                  <div class="spotImgBox">
+                  <div class="spotImgBox" data-tilt>
                     <div class="img bucu"></div>
                     <div class="spotSubtitle">맛집 부추 칼국수</div>
                   </div>
@@ -150,7 +196,24 @@
         <!-- 오른쪽 -->
         <div class="aside"></div>
       </div>
-      <div class="footer">footer</div>
+      <!-- footer -->
+      <div id="footer">
+        <div class="foot">
+          <ul>
+            <li>상호 : 대전투어</li>
+            <li>대표자 : 장이변</li>
+            <li>주소 : 대전광역시 중구 선화동</li>
+            <li>대표전화 : 042-123-1234</li>
+            <li>사업자번호 : 357-88-82139</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="fivegu.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
 </html>

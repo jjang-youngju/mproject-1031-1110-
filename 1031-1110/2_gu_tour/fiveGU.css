@@ -5,11 +5,10 @@ body {
 }
 .container {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: auto;
   margin: 0 auto;
 }
+/* 사진 첫번째 */
 .wrap {
   width: 100%;
   height: auto;
@@ -20,7 +19,6 @@ body {
 /* header */
 .header {
   width: 100%;
-  flex-basis: 17%;
   background-color: cornflowerblue;
 }
 /* 2. 우리구투어 */
@@ -44,7 +42,6 @@ body {
   background-color: rgb(237, 235, 235);
 }
 .guTourHeader {
-  /* flex-basis: 10%; */
   width: 1200px;
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +75,6 @@ body {
   color: #000;
 }
 
-/* 문의 필요 */
 .guMenu a:hover > li {
   color: rgb(85, 147, 85);
 }
@@ -86,16 +82,24 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
+/* 클릭했을 때 색깔 변경 */
+.dong,
+.jung,
+.seo,
+.dae,
+.yu {
+  background-color: #fff;
+  color: rgb(85, 147, 85);
+}
+
 /* center */
 .center {
-  flex-basis: 83%;
+  width: 1200px;
   display: flex;
   margin: 0 auto;
 }
 /* 왼쪽 */
-.nav {
-  flex-basis: 15%;
-}
+
 /* 중간 */
 .section {
   width: 1200px;
@@ -110,7 +114,6 @@ body {
   flex-direction: column;
 }
 .guTourSpot {
-  flex-basis: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -123,21 +126,21 @@ body {
   width: 1200px;
 }
 .spotResturant h1 {
-  font-size: 40px;
-  padding: 20px;
+  font-size: 33px;
+  padding-top: 40px;
+  padding-left: 50px;
 }
 .spotImgSubtitle {
   flex-basis: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
 }
 /* 여행지 */
 .spotImgBoxWrap {
   width: 1200px;
-  height: 900px;
-  border: 1px solid black;
-  padding: 10px;
+  height: auto;
+  /* border: 1px solid black; */
   border-radius: 10px;
   position: relative;
 }
@@ -153,15 +156,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: bisque;
-  /* visibility: hidden;
-  margin: 100px auto;
-  justify-content: space-evenly;
-  padding: 40px 0;
-  font-weight: 400;
-  border: 1px solid #e3e6f0;
-  border-radius: 0.35rem;
-  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-  color: #fff; */
+  z-index: 2;
+  /* 숨기는 기능 */
+  /* visibility: hidden; */
 }
 /* 뒤로가기 */
 .section-top {
@@ -171,13 +168,14 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.section-top a {
+.section-top span {
   width: 200px;
   text-decoration: none;
   color: black;
   display: flex;
   line-height: 50px;
   justify-content: center;
+  cursor: pointer;
 }
 /* 여행지 소개 */
 .section-bottom {
@@ -221,13 +219,36 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  /* ... */
+  /* position: relative; */
 }
 .img {
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  /* position: absolute; */
 }
+.img:hover {
+  transition: 0.5s;
+  transform: scale(1.2, 1.2);
+  /* background-color: rgba(232, 232, 232, 0.8); */
+}
+/* ... */
+/* .imgbox > span {
+  transition: 0.6s;
+  transform: translateX(-50%);
+  /* transform: translateX(-50%); : 팝콘처럼 튀어나옴.  
+  left: 50%;
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  color: rgba(46, 49, 49, 1);
+  bottom: 0;
+} */
+
 /* 여행지 이미지 */
 /* 동구 */
 .daedongskypark {
@@ -365,6 +386,7 @@ body {
   height: 40px;
   padding-top: 15px;
   color: #fff;
+  z-index: 1;
 }
 /* 맛집 */
 .guTourResturant {
@@ -499,12 +521,31 @@ body {
   background: url(../img/useonggu/bulgogi.jpeg) no-repeat center;
   background-size: cover;
 }
-/* 오른쪽 */
-.aside {
-  flex-basis: 15%;
-}
+
 /* footer */
-.footer {
-  flex-basis: 10%;
-  background-color: lightgreen;
+/* 문의: footer 가 같이 안줄어들음 */
+#footer {
+  width: 100%;
+  height: 80px;
+  background: rgb(246, 245, 245);
+}
+.foot {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+.foot ul {
+  width: 900px;
+  list-style: none;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+}
+.foot ul li {
+  color: gray;
+  margin-top: 35px;
+  margin-left: 15px;
+  padding-right: 13px;
+  font-size: 14px;
+  border-right: 1px solid gray;
 }
