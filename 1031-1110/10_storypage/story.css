@@ -1,55 +1,241 @@
 @charset "utf-8";
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-.header {
+
+#container {
   width: 100%;
+  height: auto;
 }
-.logo_img img {
-  width: 300px;
-  height: 80px;
-}
-/* 헤더 다리사진 */
-.logo2_img {
+
+/* 헤더 영역 */
+#header {
   width: 100%;
+  height: auto;
+  position: fixed;
+  background: white;
 }
-.logo2_img img {
+
+.header_wrap {
+  width: 100%;
+  height: 40px;
+  background: rgb(246, 245, 245);
+}
+.global_wrap {
   width: 1200px;
-  height: 300px;
-  opacity: 0.8;
+  margin: 0 auto;
+  height: 40px;
+}
+.util {
+  float: right;
+  width: 300px;
+  height: 30px;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 6px 0;
+}
+.global_wrap .util li {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  padding: 0 11px;
+  color: black;
+  font-size: 12px;
+  border-left: 1px solid #c4deff;
+}
+.util li:nth-child(1) {
+  border: 0px;
+}
+.util a {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+.search_box {
+  width: 100px;
+  display: flex;
+}
+.search {
   position: relative;
 }
-.logo2_img h1 {
-  color: rgb(57, 56, 56);
-  font-size: 50px;
-  font-weight: 900;
+.search input:focus {
+  outline: none;
+}
+#search {
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+}
+
+.search button {
   position: absolute;
-  top: 220px;
-  margin-left: 620px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
 }
-/* 메인 */
-.contents {
-  margin: 0 auto;
+.search img {
+  width: 30px;
+  height: 30px;
+  /* border: none; */
+}
+.header-main {
+  width: 100%;
+  height: 70px;
+}
+.hmain {
   width: 1200px;
-  height: 1800px;
-}
-.tourpast {
   margin: 0 auto;
+}
+.main {
+  width: 1200px;
+  height: 70px;
+
+  display: flex;
+}
+.header-logo {
+  width: 200px;
+  height: 70px;
+}
+
+.header-logo img {
+  width: 200px;
+  height: 70px;
+}
+/* 메뉴바 */
+.header-menu {
+  width: 1000px;
+  height: 70px;
+}
+
+.menu-list {
+  width: 1000px;
+  height: 70px;
+  list-style: none;
+}
+
+.menu-list li {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  width: 250px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.menu-list li ul {
+  position: relative;
+  list-style: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.menu-list li ul li {
+  width: 0;
+  height: 0;
+  position: absolute;
+  float: none;
+  line-height: 0;
+}
+
+.menu-list li:hover ul {
+  position: relative;
+  opacity: 1;
+  width: 250px;
+  height: auto;
+  z-index: 1;
+  top: -12px;
+  background: white;
+  opacity: 0.8;
+}
+
+.menu-list li:hover ul li {
+  position: relative;
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  background: white;
+  margin-top: 10px;
+}
+.menu-list li:hover ul li:hover {
+  background: rgb(187, 243, 187);
+  transition: 0.3s;
+}
+
+/* 센터영역 */
+#content {
+  width: 100%;
+  height: auto;
+}
+.content-main {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.content-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-image: url(../img/bg/bridge.png);
+  background-size: cover;
+}
+
+.main-img {
+  width: 1200px;
+  height: 500px;
+  flex-basis: 20%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-img h1 {
+  font-size: 50px;
+  font-family: '맑은고딕';
+  color: white;
+  text-align: center;
+  line-height: 500px;
+}
+
+/* 메인 */
+.main-container {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.h1-wrap {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1200px;
+  text-align: center;
 }
 h1 {
   color: rgb(41, 40, 40);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
-hr {
+.h1-wrap hr {
+  margin: 0 auto;
   width: 200px;
   border: 0;
-  height: 4px;
+  height: 5px;
   background: #ccc;
   margin-bottom: 25px;
+  text-align: center;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1200px;
+  height: auto;
 }
 .pastimg {
   text-align: center;
@@ -66,17 +252,22 @@ hr {
 .past2 {
   margin-top: -70px;
   float: right;
+  position: relative;
 }
 .past3 {
   float: left;
   margin-right: 30px;
 }
+.txt1 {
+  width: 1200px;
+  height: 230px;
+}
 .text1 {
   margin: 0;
   margin-top: 50px;
   width: 1200px;
-  height: 250px;
-  align-items: center;
+  height: 230px;
+  text-align: left;
 }
 .text1 span {
   font-size: 25px;
@@ -88,25 +279,34 @@ hr {
   font-size: 20px;
   padding: 10px;
 }
-.text2 {
-  margin: 0;
+.txt2 {
+  margin: 0 auto;
   width: 1200px;
-  height: 250px;
+  height: 300px;
+}
+.text2 {
+  width: 1200px;
+  height: 300px;
+  text-align: left;
 }
 .text2 span {
   font-size: 25px;
   font-weight: 800;
 }
 .text2 p {
-  width: 1200px;
+  margin-left: 450px;
+  width: 720px;
+  height: 250px;
   font-size: 20px;
-  text-align: centere;
+  text-align: left;
+  padding: 10px;
 }
+
 /* 푸터영역*/
 #footer {
   width: 100%;
   height: 80px;
-  background: navy;
+  background: rgb(246, 245, 245);
 }
 
 .foot {
@@ -124,10 +324,10 @@ hr {
 }
 
 .foot ul li {
-  color: #fff;
+  color: gray;
   margin-top: 35px;
   margin-left: 15px;
   padding-right: 13px;
   font-size: 14px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid gray;
 }
