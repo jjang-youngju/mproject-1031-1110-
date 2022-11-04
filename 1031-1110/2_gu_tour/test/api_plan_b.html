@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>수리남 주소</title>
+    <title>api plan b</title>
     <style>
       .spotImgBox {
         width: 1200px;
@@ -36,11 +36,14 @@
       }
       .plot {
         position: absolute;
-        top: 20%;
-        left: 5px;
+        top: 10%;
+        left: 2px;
         color: #000;
         font-weight: 800;
         opacity: 0;
+        /* transition: 0.6s;*/
+        transform: translateY(50%);
+        padding-left: 10px;
       }
       .ms_o {
         display: flex;
@@ -50,30 +53,28 @@
         height: auto;
         position: absolute;
       }
-      /* .a::after {
-        background-color: lightpink;
-      } */
-       .back:hover {
+      .back:hover {
         background: rgba(232, 232, 232, 0.8);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         z-index: 1;
-
       }
-      .back:hover> .plot{
+      .back:hover > .plot {
         opacity: 1;
       }
-      .back{
+      .back {
         width: 320px;
-        height: 355px;
+        height: 300px;
         position: absolute;
       }
-
-        /*
-      .a:hover > .img {
-        z-index: -1;
+      .nam {
+        width: 100px;
+        text-align: right;
       }
-      .a:hover > .plot {
-        opacity: 1;
-      } */ */
+      .ect {
+        width: 200px;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -85,16 +86,20 @@
       <div class="back">
         <div class="plot">
           <div class="ms_o">
-            <div>NAME :</div>
-            <div>오씨 칼국수</div>
+            <div class="nam">이름 :</div>
+            <div class="ect">오씨 칼국수</div>
           </div>
           <div class="ms_o">
-            <div>ADDRESS :</div>
-            <div>오씨 칼국수 주소rfasjkfjkflasjklfasdf</div>
+            <div class="nam">주소:</div>
+            <div class="ect">대전광역시 동구 옛신탄진로 13</div>
           </div>
           <div class="ms_o">
-            <div>NUMBER :</div>
-            <div>010-1234-5678</div>
+            <div class="nam">전화번호 :</div>
+            <div class="ect">010-1234-5678</div>
+          </div>
+          <div class="ms_o">
+            <div class="nam">대표메뉴 :</div>
+            <div class="ect">칼국수</div>
           </div>
         </div>
       </div>
