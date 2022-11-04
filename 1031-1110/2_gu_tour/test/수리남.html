@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수리남 주소</title>
+    <style>
+      .spotImgBox {
+        width: 1200px;
+        height: auto;
+        border-radius: 10px;
+        position: relative;
+      }
+      .img {
+        width: 320px;
+        height: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .mr_o {
+        background: url(../../img/donggu/mr_o1.jpeg);
+      }
+      .spotSubtitle {
+        text-align: center;
+        background-color: rgb(85, 147, 85);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 16px;
+        font-weight: 800;
+        height: 40px;
+        padding-top: 15px;
+        color: #fff;
+        width: 320px;
+        height: 40px;
+      }
+      .plot {
+        position: absolute;
+        top: 20%;
+        left: 5px;
+        color: #000;
+        font-weight: 800;
+        opacity: 0;
+      }
+      .ms_o {
+        display: flex;
+      }
+      .a {
+        width: 330px;
+        height: auto;
+        position: absolute;
+      }
+      /* .a::after {
+        background-color: lightpink;
+      } */
+       .back:hover {
+        background: rgba(232, 232, 232, 0.8);
+        z-index: 1;
+
+      }
+      .back:hover> .plot{
+        opacity: 1;
+      }
+      .back{
+        width: 320px;
+        height: 355px;
+        position: absolute;
+      }
+
+        /*
+      .a:hover > .img {
+        z-index: -1;
+      }
+      .a:hover > .plot {
+        opacity: 1;
+      } */ */
+    </style>
+  </head>
+  <body>
+    <div class="spotImgBox">
+      <div class="a">
+        <div class="img mr_o"></div>
+        <div class="spotSubtitle">오씨칼국수</div>
+      </div>
+      <div class="back">
+        <div class="plot">
+          <div class="ms_o">
+            <div>NAME :</div>
+            <div>오씨 칼국수</div>
+          </div>
+          <div class="ms_o">
+            <div>ADDRESS :</div>
+            <div>오씨 칼국수 주소rfasjkfjkflasjklfasdf</div>
+          </div>
+          <div class="ms_o">
+            <div>NUMBER :</div>
+            <div>010-1234-5678</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
