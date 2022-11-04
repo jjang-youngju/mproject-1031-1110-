@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  cursor: url('../img/cursor.cur'), auto;
+}
+
+a,
+a:link {
+  cursor: url('../img/cursor.cur'), auto;
+}
+
+a:hover,
+a:focus {
+  cursor: url('../img/cursor.cur'), auto;
+}
+
+a:active {
+  cursor: url('../img/cursor.cur'), auto;
+}
+
 #container {
   width: 100%;
   height: auto;
@@ -15,6 +34,7 @@
   height: auto;
   position: fixed;
   background: white;
+  z-index: 1;
 }
 
 .header_wrap {
@@ -22,11 +42,13 @@
   height: 40px;
   background: rgb(246, 245, 245);
 }
+
 .global_wrap {
   width: 1200px;
   margin: 0 auto;
   height: 40px;
 }
+
 .util {
   float: right;
   width: 300px;
@@ -36,6 +58,7 @@
   vertical-align: middle;
   margin: 6px 0;
 }
+
 .global_wrap .util li {
   height: 30px;
   line-height: 30px;
@@ -45,24 +68,30 @@
   font-size: 12px;
   border-left: 1px solid #c4deff;
 }
+
 .util li:nth-child(1) {
   border: 0px;
 }
+
 .util a {
   font-size: 15px;
   color: black;
   text-decoration: none;
 }
+
 .search_box {
   width: 100px;
   display: flex;
 }
+
 .search {
   position: relative;
 }
+
 .search input:focus {
   outline: none;
 }
+
 #search {
   height: 30px;
   border: none;
@@ -72,28 +101,33 @@
 .search button {
   position: absolute;
   height: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: none;
 }
+
 .search img {
   width: 30px;
   height: 30px;
   /* border: none; */
 }
+
 .header-main {
   width: 100%;
   height: 70px;
 }
+
 .hmain {
   width: 1200px;
   margin: 0 auto;
 }
+
 .main {
   width: 1200px;
   height: 70px;
 
   display: flex;
 }
+
 .header-logo {
   width: 200px;
   height: 70px;
@@ -103,6 +137,7 @@
   width: 200px;
   height: 70px;
 }
+
 /* 메뉴바 */
 .header-menu {
   width: 1000px;
@@ -123,7 +158,7 @@
   text-align: center;
   font-size: 20px;
   font-weight: 800;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .menu-list li ul {
@@ -159,11 +194,12 @@
   height: 30px;
   line-height: 30px;
   text-align: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   color: black;
   background: white;
   margin-top: 10px;
 }
+
 .menu-list li:hover ul li:hover {
   background: rgb(187, 243, 187);
   transition: 0.3s;
@@ -174,11 +210,13 @@
   width: 100%;
   height: auto;
 }
+
 .content-main {
   width: 1200px;
   height: auto;
   margin: 0 auto;
 }
+
 .content-img {
   width: 100%;
   height: auto;
@@ -209,10 +247,12 @@
   width: 100%;
   text-align: center;
 }
+
 .tour-wrap {
   margin: 0 auto;
   width: 100%;
 }
+
 .tour-menu {
   margin: 0 auto;
   width: 1200px;
@@ -220,6 +260,7 @@
   position: relative;
   background-color: rgb(237, 235, 235);
 }
+
 .tour-list {
   padding: 0;
   margin: 0;
@@ -231,6 +272,7 @@
   height: 70px;
   text-align: center;
 }
+
 .tour-list li {
   float: left;
   height: 70px;
@@ -239,44 +281,53 @@
   text-align: center;
   position: relative;
 }
+
 .tour-list li:hover {
   background: #ffff;
 }
+
 .tour-list a {
   text-decoration: none;
   color: black;
   margin-top: 100px;
 }
+
 /* 투어라인 */
 .tourimg-wrap {
   margin: 0 auto;
   width: 100%;
 }
+
 .tour-line {
   margin: 0 auto;
   margin-top: 20px;
   width: 1200px;
   height: 1100px;
 }
+
 .tour-line h2 {
   margin-bottom: 20px;
   padding-left: 30px;
   text-align: left;
 }
+
 .tour-line h2 a {
   text-decoration: none;
   color: black;
 }
+
 .tour-line img {
   margin-top: 50px;
   width: 1200px;
   height: 400px;
   text-align: center;
 }
+
 .tour-img {
   display: flex;
   justify-content: space-around;
 }
+
 .image {
   width: 170px;
   height: 170px;
@@ -284,6 +335,7 @@
   background: rgb(85, 147, 85);
   border-radius: 10px;
 }
+
 .img {
   width: 170px;
   height: 130px;
@@ -291,6 +343,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .month-line,
 .recommend-line,
 .tasty-line,
@@ -299,12 +352,15 @@
   width: 1200px;
   height: 240px;
 }
+
 .month-line {
   margin-top: 80px;
 }
+
 .thema-line {
   margin-bottom: 100px;
 }
+
 /* 대전역 */
 .img1 {
   background: url(../img/donggu/daejeonstation1.jpeg) no-repeat center;
@@ -316,14 +372,17 @@
   background: url(../img/junggu/owarld1.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img3 {
   background: url(../img/seogu/hanbat1.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img4 {
   background: url(../img/seogu/artgallery1.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img5 {
   background: url(../img/useonggu/urimpark1.jpeg) no-repeat center;
   background-size: cover;
@@ -334,14 +393,17 @@
   background: url(../img/seogu/yesul2.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img7 {
   background: url(../img/useonggu/hanbittap.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img8 {
   background: url(../img/daedeokgu/daecheonglake2.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img9 {
   background: url(../img/donggu/centralmarket.jpeg) no-repeat center;
   background-size: cover;
@@ -352,14 +414,17 @@
   background: url(../img/donggu/mr_o2.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img11 {
   background: url(../img/seogu/hanbat2.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img12 {
   background: url(../img/seogu/subok1.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img13 {
   background: url(../img/junggu/sunsimdang1.jpeg) no-repeat center;
   background-size: cover;
@@ -370,14 +435,17 @@
   background: url(../img/donggu/uamhistoricpark3.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img15 {
   background: url(../img/daedeokgu/dongchundang1.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img16 {
   background: url(../img/seogu/dosan2.jpeg) no-repeat center;
   background-size: cover;
 }
+
 .img17 {
   background: url(../img/seogu/prehistoricsite2.jpeg) no-repeat center;
   background-size: cover;
