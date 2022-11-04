@@ -95,6 +95,7 @@ body {
 /* center */
 .center {
   width: 1200px;
+  height: 2200px;
   display: flex;
   margin: 0 auto;
 }
@@ -523,7 +524,6 @@ body {
 }
 
 /* footer */
-/* 문의: footer 가 같이 안줄어들음 */
 #footer {
   width: 100%;
   height: 80px;
