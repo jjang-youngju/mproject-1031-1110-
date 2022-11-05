@@ -32,7 +32,7 @@ a:active {
 #header {
   width: 100%;
   height: auto;
-  position: fixed;
+  /* position: fixed; */
   background: white;
   z-index: 1;
 }
@@ -221,7 +221,7 @@ a:active {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-image: url(../img/bg/bridge.png);
+  background-image: url(../img/bg/expobridge.jpg);
   background-size: cover;
 }
 
@@ -312,6 +312,7 @@ a:active {
 }
 
 .tour-line h2 a {
+  margin-top: 30px;
   text-decoration: none;
   color: black;
 }
