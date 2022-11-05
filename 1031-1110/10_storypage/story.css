@@ -74,14 +74,11 @@
 
 .search button {
   position: absolute;
-  height: 30px;
+  width: 30px;
+  height: 32px;
   cursor: pointer;
   border: none;
-}
-.search img {
-  width: 30px;
-  height: 30px;
-  /* border: none; */
+  /* padding: 0; */
 }
 .header-main {
   width: 100%;
