@@ -328,9 +328,9 @@ h1 {
   height: 300px;
 }
 .tourtxt {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-top: -100px;
-  margin-left: 400px;
+  margin-left: 100px;
   padding-left: 0px;
   width: 700px;
   height: auto;
@@ -340,6 +340,7 @@ h1 {
   margin-bottom: 30px;
 }
 .txt3 {
+  margin: 0 auto;
   /* margin-left: 80px; */
   background-color: #ffff;
   position: relative;
