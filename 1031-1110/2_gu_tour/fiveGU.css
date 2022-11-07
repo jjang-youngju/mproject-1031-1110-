@@ -253,7 +253,7 @@ body {
 /* 여행지 이미지 */
 /* 동구 */
 .daedongskypark {
-  background: url(../img/donggu/daedongskypark1.jpeg) no-repeat center;
+  background: url(../img/donggu/sangsoauto.jpg) no-repeat center;
   background-size: cover;
 }
 .uamhistoricpark {
@@ -261,11 +261,11 @@ body {
   background-size: cover;
 }
 .centralmarket {
-  background: url(../img/donggu/centralmarket.jpeg) no-repeat center;
+  background: url(../img/donggu/hanbateducation.jpg) no-repeat center;
   background-size: cover;
 }
 .daejeonstation {
-  background: url(../img/donggu/daejeonstation1.jpeg) no-repeat center;
+  background: url(../img/donggu/narae.jpg) no-repeat center;
   background-size: cover;
 }
 .manin_mt {
@@ -282,7 +282,7 @@ body {
   background-size: cover;
 }
 .yeogyeongam {
-  background: url(../img/junggu/yeogyeongam3.gif) no-repeat center;
+  background: url(../img/junggu/youhoedang.jpg) no-repeat center;
   background-size: cover;
 }
 .owarld {
@@ -344,11 +344,11 @@ body {
   background-size: cover;
 }
 .cheongja {
-  background: url(../img/daedeokGu/cheongja.jpeg) no-repeat center;
+  background: url(../img/daedeokGu/hoeduk.jpg) no-repeat center;
   background-size: cover;
 }
 .sun {
-  background: url(../img/daedeokGu/sun1.jpeg) no-repeat center;
+  background: url(../img/daedeokGu/sodaehun.jpg) no-repeat center;
   background-size: cover;
 }
 /* 유성구 */
@@ -365,7 +365,7 @@ body {
   background-size: cover;
 }
 .hanbittap {
-  background: url(../img/useonggu/hanbittap.jpeg) no-repeat center;
+  background: url(../img/useonggu/yuseongoncheon.jpg) no-repeat center;
   background-size: cover;
 }
 .urimpark {
