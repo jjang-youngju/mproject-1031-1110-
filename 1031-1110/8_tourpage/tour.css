@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 html,
 body {
   cursor: url('../img/cursor.cur'), auto;
@@ -129,6 +134,9 @@ a:active {
   width: 200px;
   height: 70px;
 }
+.header-logo a {
+  text-decoration: none;
+}
 
 .header-logo img {
   width: 200px;
@@ -218,13 +226,13 @@ a:active {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-image: url(../img/bg/expobridge.jpg);
+  background: url(../img/bg/tour.jpg) no-repeat center;
   background-size: cover;
 }
 
 .main-img {
   width: 1200px;
-  height: 500px;
+  height: 380px;
   flex-basis: 20%;
   position: relative;
   margin: 0 auto;
@@ -235,7 +243,7 @@ a:active {
   font-family: '맑은고딕';
   color: white;
   text-align: center;
-  line-height: 500px;
+  line-height: 400px;
 }
 
 /* 메인 */
