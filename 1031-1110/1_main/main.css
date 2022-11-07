@@ -318,9 +318,17 @@
   line-height: 100px;
   /* margin: 25px 0; */
 }
-.dajeon-info a {
-  height: 100px;
+.dajeon-info .b {
+  width: 100px;
+  height: 50px;
   line-height: 50px;
+  background: lightgray;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+.dajeon-info a {
+  color: white;
+  text-decoration: none;
 }
 /* 푸터영역*/
 #footer {
