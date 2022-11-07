@@ -8,12 +8,73 @@
     <link rel="stylesheet" href="fiveGU.css" />
     <link rel="icon" href="../img/logo/daejeonlogo.png" />
     <link rel="stylesheet" href="init.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="top">
-        <div class="header">header</div>
+        <!-- header -->
+        <div id="header">
+          <div class="header_wrap">
+            <div class="global_wrap">
+              <ul class="util">
+                <li><a href="https://www.daejeon.go.kr/">대전광역시청</a></li>
+                <li>
+                  <div class="search_box">
+                    <div class="search">
+                      <input
+                        type="text"
+                        id="search"
+                        name="search"
+                        placeholder="검색"
+                      />
+                      <button><i class="bi bi-search"></i></button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-main">
+            <div class="hmain">
+              <div class="main">
+                <div class="header-logo">
+                  <img src="../img/logo/hasyulogo.png" />
+                </div>
+                <div class="header-menu">
+                  <ul class="menu-list">
+                    <li>
+                      우리구이야기
+                      <ul>
+                        <a href="dongGu.html"> <li>동구</li> </a>
+                        <a href="jungGu.html"> <li>중구</li> </a>
+                        <a href="seoGu.html"><li>서구</li> </a>
+                        <a href="yuseongGu.html"><li>유성구</li> </a>
+                        <a href="daedeokGu.html"><li>대덕구</li> </a>
+                      </ul>
+                    </li>
+                    <li>
+                      투어
+                      <ul>
+                        <li>이달의 여행</li>
+                        <li>추천 여행</li>
+                        <li>맛집 여행</li>
+                        <li>테마여행</li>
+                      </ul>
+                    </li>
+                    <li>축제&행사</li>
+                    <li>대전이야기</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- header 아래 -->
       <div class="center">
         <!-- 왼쪽 -->
         <div class="nav"></div>
@@ -22,7 +83,7 @@
           <div class="wrap">
             <div class="ourguTour">
               <div class="h1">
-                <h1>우리 구 투어</h1>
+                <h1>우리 구 투어 하러 가~유</h1>
               </div>
             </div>
             <!-- 구 메뉴바 -->
@@ -47,82 +108,138 @@
                 <h1>◾ 여행지</h1>
               </div>
               <div class="spotImgBoxWrap">
-                <!-- 여행지 상세 정보 -->
-                <div class="spotsection">
-                  <!-- 뒤로 가기 -->
-                  <div class="section-top">
-                    <span onclick="doClose()">◀ Back to 여행지</span>
-                  </div>
-                  <!-- 소개 페이지 -->
-                  <div class="section-bottom">
-                    <div class="section-info">
-                      <div class="name">
-                        <span>NAME : </span>
-                        <span id="name"></span>
-                      </div>
-                      <div class="addr">
-                        <span>ADDRESS : </span>
-                        <span id="addr"></span>
-                      </div>
-                      <div class="phone">
-                        <span>NUMBER : </span>
-                        <span id="number"></span>
-                      </div>
-                    </div>
-                    <div class="section-map" id="map"></div>
-                  </div>
-                </div>
                 <!-- 여행지 이미지 -->
                 <div class="spotImgSubtitle">
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
+                  <!-- <div class="spotImgBox">
                     <div class="img daecheonglake"></div>
                     <div class="spotSubtitle">대청호</div>
+                  </div> -->
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img daecheonglake"></div>
+                      <div class="spotSubtitle">대청호</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 대청호 <br />주소: 대전광역시 대덕구 대청로
+                            618-136<br />
+                            전화번호 : 042-930-7332
+                            <br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
-                    <div class="img Gyejokmt"></div>
-                    <div class="spotSubtitle">계족산</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img Gyejokmt"></div>
+                      <div class="spotSubtitle">계족산</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 계족산 <br />주소: 대전 대덕구 장동 산 91<br />
+                            전화번호 : 042-623-9909<br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
-                    <div class="img dongchundang"></div>
-                    <div class="spotSubtitle">동춘당</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img dongchundang"></div>
+                      <div class="spotSubtitle">동춘당</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 동춘당 <br />주소: 대전 대덕구 동춘당로 80
+                            동춘당<br />
+                            전화번호 : 042-607-6575<br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
                 </div>
                 <div class="spotImgSubtitle">
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
-                    <div class="img ohaseu"></div>
-                    <div class="spotSubtitle">로하스 캠핑장</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img ohaseu"></div>
+                      <div class="spotSubtitle">로하스 캠핑장</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 로하스 캠핑장 <br />주소: 대전광역시 대덕구
+                            대청로 424번길 200<br />
+                            전화번호 : 042-933-9481<br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
-                    <div class="img cheongja"></div>
-                    <div class="spotSubtitle">회덕향교</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img cheongja"></div>
+                      <div class="spotSubtitle">회덕향교</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 회덕향교 <br />주소: 대전 대덕구 읍내동<br />
+                            전화번호 : 042-628-2021<br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div
-                    class="spotImgBox"
-                    data-tilt
-                    onclick="getTravelImgDetail()"
-                  >
-                    <div class="img sun"></div>
-                    <div class="spotSubtitle">소대헌 • 호연재 고택</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img sun"></div>
+                      <div class="spotSubtitle">소대헌 • 호연재 고택</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 소대헌 • 호연재 고택 <br />주소: 대전 대덕구
+                            동춘당로 70<br />
+                            전화번호 : 042-608-6575<br />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
                 </div>
               </div>
@@ -135,31 +252,131 @@
               <div class="spotImgBoxWrap">
                 <!-- 맛집 이미지 -->
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img galbat"></div>
-                    <div class="spotSubtitle">갈밭식당</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img galbat"></div>
+                      <div class="spotSubtitle">갈밭식당</div>
+                    </div>
+                    <div class="back">
+                      <!-- spot_des -->
+                      <div class="plot">
+                        <!-- spot_plit -->
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 갈밭식당 <br />주소: 대전광역시 대덕구
+                            대청호수로 1553<br />
+                            전화번호 : 042-932-3872<br />영업시간 안내 : 11:30 ~
+                            21:00<br />
+                            대표메뉴 : 쏘가리 매운탕, 도리뱅뱅
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img meabong"></div>
-                    <div class="spotSubtitle">매봉식당</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img meabong"></div>
+                      <div class="spotSubtitle">매봉식당</div>
+                    </div>
+                    <div class="back">
+                      <div class="plot">
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 매봉식당 <br />주소: 대전광역시 대덕구
+                            계족로664번길 113<br />전화번호 :042-672-3962
+                            <br />영업시간 안내 : 11:30 ~ 21:00<br />
+                            대표메뉴 :두부전골
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img sundae"></div>
-                    <div class="spotSubtitle">오문창 순대국밥</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img sundae"></div>
+                      <div class="spotSubtitle">오문창 순대국밥</div>
+                    </div>
+                    <div class="back">
+                      <div class="plot">
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 :오문창 순대국밥 <br />주소: 대전광역시 대덕구
+                            중리동 한밭대로 1153 <br />전화번호 :042-621-4325<br />영업시간
+                            안내 : 24시간 영업<br />대표메뉴 : 순대국밥,
+                            순대국수, 곱창전골
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
                 </div>
                 <div class="spotImgSubtitle">
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img mansusan"></div>
-                    <div class="spotSubtitle">만수산 칡냉면</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img mansusan"></div>
+                      <div class="spotSubtitle">만수산 칡냉면</div>
+                    </div>
+                    <div class="back">
+                      <div class="plot">
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 만수산 칡냉면 <br />주소:대전광역시 대덕구
+                            계족로 536 <br />전화번호 : 042-623-3500<br />영업시간
+                            안내 : 11:00 - 22:00<br />
+                            대표메뉴 :양념 돼지갈비, 목살,칡냉면, <br />
+                            돼지돌판구이
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img boboro"></div>
-                    <div class="spotSubtitle">보보로베이커리</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img boboro"></div>
+                      <div class="spotSubtitle">보보로베이커리</div>
+                    </div>
+                    <div class="back">
+                      <div class="plot">
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 보보로베이커리 <br />주소: 대전 대덕구
+                            계족산로 81번길 96 <br />전화번호 :042-632-0445
+                            <br />영업시간 안내 : 07:30 - 22:00<br />대표메뉴
+                            :크로와상, 몽블랑, 갈릭바게트
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
-                  <div class="spotImgBox" data-tilt>
-                    <div class="img bucu"></div>
-                    <div class="spotSubtitle">맛집 부추 칼국수</div>
+                  <div class="spotImgBox">
+                    <!-- test start -->
+                    <div class="a">
+                      <div class="img bucu"></div>
+                      <div class="spotSubtitle">맛집 부추 칼국수</div>
+                    </div>
+                    <div class="back">
+                      <div class="plot">
+                        <div class="ms_o">
+                          <div class="nam">
+                            이름 : 맛집 부추 칼국수 <br />주소: 대전 대덕구
+                            신탄진로 804번길 31 <br />전화번호 :
+                            0507-1425-5656<br />영업시간 안내 : 11:00 - 20:00<br />대표메뉴
+                            :칼국수, 쭈꾸미, 삼겹쭈꾸미
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- test end -->
                   </div>
                 </div>
               </div>
