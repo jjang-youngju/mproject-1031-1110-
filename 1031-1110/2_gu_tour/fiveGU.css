@@ -128,14 +128,14 @@ body {
 }
 .spotResturant h1 {
   font-size: 33px;
-  padding-top: 40px;
-  padding-left: 50px;
+  padding-top: 70px;
+  padding-left: 30px;
 }
 .spotImgSubtitle {
   flex-basis: 80%;
   display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 /* 여행지 */
 .spotImgBoxWrap {
@@ -382,7 +382,7 @@ body {
   background-color: rgb(85, 147, 85);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   height: 40px;
   padding-top: 15px;
