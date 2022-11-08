@@ -231,7 +231,7 @@ a:active {
   font-family: '맑은고딕';
   color: white;
   text-align: center;
-  line-height: 500px;
+  line-height: 600px;
 }
 .section {
   width: 1200px;
@@ -244,62 +244,66 @@ a:active {
   /* margin: 0 auto; */
 }
 .title-main {
+  margin: 0 auto;
   width: 1200px;
-  height: 100px;
+  height: 80px;
   line-height: 80px;
   /* margin: 30px 0; */
   margin-top: 30px;
 }
 .title-main h2 {
+  margin: 0 auto;
   width: 100px;
   height: 50px;
   line-height: 50px;
-  margin: 0 auto;
 }
 .title-main hr {
   width: 130px;
   height: 4px;
   background: lightgray;
   border: none;
-  margin: 0 auto;
-  margin-top: -10px;
+  margin-top: 2px;
 }
 .title-list {
   width: 1200px;
   height: auto;
   display: flex;
-  margin: 20px 0;
+  margin: 45px 0;
 }
 .title-img {
-  width: 250px;
+  width: 290px;
   height: auto;
+  padding-left: 20px;
 }
 .title-img img {
   width: 250px;
   height: 250px;
+  border-radius: 10px;
 }
 .title-txt {
-  width: 930px;
+  width: 900px;
   height: auto;
   /* margin: 0 20px; */
 }
 .title-txt h1 {
-  width: 930px;
+  width: 900px;
   height: auto;
-  margin: 10px 0;
+  margin: 0;
   padding: 0 20px;
 }
 .title-txt h3 {
-  width: 930px;
+  width: 900px;
   height: auto;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 0 20px;
+  font-size: 25px;
 }
 .title-txt p {
-  width: 930px;
+  width: 900px;
   height: auto;
-  margin: 20px 0;
-  padding: 0 20px;
+  margin: 15px 0;
+  padding: 0 25px;
+  font-size: 18px;
 }
 
 /* .info-notice {

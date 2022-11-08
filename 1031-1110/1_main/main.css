@@ -213,6 +213,8 @@ a:active {
   width: 100%;
   height: auto;
   background: rgb(246, 245, 245);
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 .main-title {
   width: 1200px;
@@ -223,7 +225,6 @@ a:active {
   width: 1200px;
   height: 100px;
   line-height: 80px;
-  margin-top: 50px;
 }
 .main-title hr {
   width: 130px;
@@ -300,9 +301,11 @@ a:active {
   text-decoration: none;
   color: white;
 }
-.title {
+.title2 {
   width: 100%;
   height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .ltitle2 {
   width: 1200px;
