@@ -179,8 +179,9 @@ a:active {
 .menu-list li:hover ul li {
   position: relative;
   width: 250px;
-  height: 30px;
-  line-height: 30px;
+  /* 30px 에서 50px로 조정 */
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   /* cursor: pointer; */
   color: black;
@@ -188,7 +189,9 @@ a:active {
   margin-top: 10px;
 }
 .menu-list li:hover ul li:hover {
-  background: rgb(187, 243, 187);
+  /* background: rgb(187, 243, 187); */
+  /* 색상조정 확인바랍니다 */
+  background: rgb(170, 168, 168);
   transition: 0.3s;
 }
 
@@ -281,6 +284,9 @@ a:active {
 }
 .img-txt h3 {
   margin: 20px auto;
+  font-size: 23px;
+  font-weight: 900px;
+  margin-bottom: 25px;
 }
 .title-a {
   width: 235.5px;
@@ -293,13 +299,16 @@ a:active {
   width: 100px;
   height: 50px;
   line-height: 50px;
-  background: lightgray;
+  /* background: lightgray; */
+  /* 색상조정 확인바랍니다 */
+  background: rgb(196, 193, 193);
   border-radius: 30px;
 }
 .title-a a {
   z-index: 1;
   text-decoration: none;
   color: white;
+  font-weight: 900;
 }
 .title2 {
   width: 100%;
@@ -352,13 +361,15 @@ a:active {
   width: 100px;
   height: 50px;
   line-height: 50px;
-  background: lightgray;
+  /* background: lightgray; */
+  background: rgb(196, 193, 193);
   margin: 0 auto;
   border-radius: 30px;
 }
 .dajeon-info a {
   color: white;
   text-decoration: none;
+  font-weight: 900;
 }
 /* 푸터영역*/
 #footer {
