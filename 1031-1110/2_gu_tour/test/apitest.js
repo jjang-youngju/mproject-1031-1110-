@@ -1,34 +1,26 @@
-// 클릭했을 때 상세정보 페이지 나오게 하기
 
-// API_KEY
-const API_KEY =
-  'jlg7KY2npJeU37heElpwCwtYwftrL9yxya9arHvaWoAEmWZG5Pf8NZVOPG7QLy8LzpkAEjeNgey%2Fbj5Pv2N6uw%3D%3D';
-
-// open api 여행지에 사용
-
-// 클릭했을 때 close 되는 함수
-function doClose() {
-  $('.spotsection').css('visibility', 'hidden');
-  $('.section-bottom').css('opacity', 1);
+window.onload = function(){
+   document.getElementById("bt").addEventListener("click",clickBt);
+}
+function clickBt(){
+    var search = document.getElementById("search").value;
+    var gu = ["동구","중구","서구","유성구","대덕구","이달의 여행","추천여행","맛집여행","테마여행","축제","행사","대전이야기"];
+    var guHtml = ["../../2_gu_tour/dongGu.html",
+    "../../2_gu_tour/jungGu.html",
+    "../../2_gu_tour/seoGu.html",
+    "../../2_gu_tour/yuseongGu.html",
+    "../../2_gu_tour/daedeokGu.html",
+    "../../8_tourpage/tour.html#month",
+    "../../8_tourpage/tour.html#recommend",
+    "../../8_tourpage/tour.html#tasty",
+    "../../8_tourpage/tour.html#thema",
+    "../../9_festival/fastival.html",
+    "../../9_festival/fastival.html",
+    "../../10_storypage/story.html"
+]
+    for(var i = 0; i<gu.length; i++){
+       if(search == gu[i])
+       window.open(guHtml[i],"_self");
+    }
 }
 
-getTrip();
-
-function getTrip() {
-  var searchCondition = 1;
-  $.ajax({
-    url:
-      'http://apis.data.go.kr/6300000/tourDataService/tourDataListJson?serviceKey=' +
-      API_KEY +
-      '&searchCondition=' +
-      searchCondition +
-      '',
-    type: 'GET',
-    dataType: 'json',
-    success: function (response) {
-      for (var i = 0; i < response.msgBody.length; i++) {
-        console.log(response.msgBody[i].name, ',', response.msgBody[i].addr1);
-      }
-    },
-  });
-}
