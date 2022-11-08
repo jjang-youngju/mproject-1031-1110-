@@ -312,7 +312,7 @@ a:active {
 
 .tour-line h2 {
   margin-bottom: 20px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   text-align: left;
 }
 
@@ -320,6 +320,17 @@ a:active {
   margin-top: 30px;
   text-decoration: none;
   color: black;
+}
+.map-searching {
+  width: 1200px;
+  height: 50px;
+}
+.map-searching a {
+  text-align: left;
+  display: inline-block;
+}
+.tour-title {
+  width: 1080px;
 }
 
 .tour-line img {
