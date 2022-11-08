@@ -321,6 +321,17 @@ a {
   justify-content: space-around;
   padding-top: 50px;
 }
+
+/* 애니메이션 구현 */
+@keyframes spotImgSubtitle {
+  0% {
+    opacity: 0;
+  }
+  30%{
+    
+  }
+}
+/* 애니메이션 구현 끝 */
 /* 여행지 */
 .spotImgBoxWrap {
   width: 1200px;
