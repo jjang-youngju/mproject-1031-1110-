@@ -34,7 +34,7 @@ a:active {
   width: 100%;
 }
 #header {
-  width: 1200px;
+  /* width: 1200px; */
   height: auto;
   /* position: fixed; */
   /* display, flex-direction, margin 추가. z-index, postion : fixed 주석. 확인 */
