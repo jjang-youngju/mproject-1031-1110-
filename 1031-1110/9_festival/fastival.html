@@ -32,12 +32,13 @@
                   <div class="search_box">
                     <div class="search">
                       <input
+                        onkeyup="enterkey()"
                         type="text"
                         id="search"
                         name="search"
                         placeholder="검색"
                       />
-                      <button><i class="bi bi-search"></i></button>
+                      <button id="bt"><i class="bi bi-search"></i></button>
                     </div>
                   </div>
                 </li>
@@ -308,4 +309,5 @@
       </div>
     </div>
   </body>
+  <script src="fastivalsearch.js"></script>
 </html>
