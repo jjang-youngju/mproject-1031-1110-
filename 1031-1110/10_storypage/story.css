@@ -182,11 +182,11 @@ a:active {
   float: none;
   line-height: 0;
 }
-
 .menu-list li div:hover {
   background: rgb(246, 245, 245);
 }
 .menu-list li:hover {
+  height: 80px;
   background: rgb(246, 245, 245);
 }
 .menu-list li:hover ul {
@@ -234,6 +234,7 @@ a:active {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-top: 2px;
   background-image: url(../img/bg/story2.jpg);
   background-size: cover;
 }
@@ -380,6 +381,7 @@ h1 {
   text-align: right;
 }
 .tourimg img {
+  border-radius: 50px;
   width: 800px;
   height: 300px;
 }
@@ -396,10 +398,15 @@ h1 {
   margin-bottom: 30px;
 }
 .txt3 {
+  width: 750px;
+  height: 650px;
   margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 50px;
   /* margin-left: 80px; */
-  background-color: #ffff;
+  background-color: white;
   position: relative;
+  border-radius: 50px;
 }
 .text3 ul {
   margin-bottom: 30px;

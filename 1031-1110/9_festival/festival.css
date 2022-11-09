@@ -40,6 +40,9 @@ a:active {
 }
 
 /* 로고 메뉴 */
+.top {
+  width: 100%;
+}
 #header {
   width: 100%;
   height: 120px;
@@ -237,6 +240,7 @@ a:active {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-top: 2px;
   background-image: url(../img/bg/expobridge.jpg);
   background-size: cover;
 }
