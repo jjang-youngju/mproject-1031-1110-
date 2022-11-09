@@ -356,6 +356,9 @@ a:active {
   background: rgb(241, 238, 238);
   font-weight: 500;
 }
+.bi {
+  color: rgb(85, 147, 85);
+}
 .tour-line img {
   margin-top: 50px;
   width: 1200px;
