@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&family=Sunflower:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="top">
@@ -32,12 +37,13 @@
                   <div class="search_box">
                     <div class="search">
                       <input
+                        onkeyup="enterkey();"
                         type="text"
                         id="search"
                         name="search"
                         placeholder="검색"
                       />
-                      <button><i class="bi bi-search"></i></button>
+                      <button id="bt"><i class="bi bi-search"></i></button>
                     </div>
                   </div>
                 </li>
@@ -123,10 +129,10 @@
             </div>
             <div class="pasttxt">
               <div class="txt1">
-                <div class="past2">
+                <div class="past2 slide-right">
                   <img src="../img/image1/past2.png" alt="" />
                 </div>
-                <div class="text text1">
+                <div class="text text1 slide-left">
                   <span>1914년 대전군(大田郡)이 형성된 당시</span>
                   <p>
                     12개 면의 각 지도는 대전이란 도시의 탄생을 알리는
@@ -136,10 +142,10 @@
                 </div>
               </div>
               <div class="txt2">
-                <div class="past3">
+                <div class="past3 slide-left">
                   <img src="../img/image1/past3.png" alt="" />
                 </div>
-                <div class="text text2">
+                <div class="text text2 slide-right">
                   <span>1905년 대전역이 세워지자 </span>
                   <p>
                     그 주변으로 사람과 물자가 모여 이른바 ‘시가지’가
@@ -168,11 +174,11 @@
           </div>
           <div class="wrap2">
             <div class="tour">
-              <div class="tourimg">
+              <div class="tourimg slide-right">
                 <img src="../img/image1/callcenter.jpg" alt="" />
               </div>
             </div>
-            <div class="tourtxt">
+            <div class="tourtxt slide-left">
               <div class="txt3">
                 <div class="text3">
                   <div class="maintxt">대전지역 관광안내소 (4개소)</div>
@@ -225,4 +231,15 @@
       </div>
     </div>
   </body>
+  <script src="search.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="jquery.fadethis.min.js"></script>
+
+  <script>
+    $(window).fadeThis();
+  </script>
 </html>
