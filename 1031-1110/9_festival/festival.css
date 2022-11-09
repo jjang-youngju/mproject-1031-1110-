@@ -43,9 +43,9 @@ a:active {
 #header {
   width: 100%;
   height: auto;
-  position: fixed;
+  /* position: fixed; */
   background: white;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .header_wrap {
@@ -53,11 +53,13 @@ a:active {
   height: 40px;
   background: rgb(246, 245, 245);
 }
+
 .global_wrap {
   width: 1200px;
   margin: 0 auto;
   height: 40px;
 }
+
 .util {
   float: right;
   /* width: 400px;
@@ -67,6 +69,7 @@ a:active {
   vertical-align: middle;
   margin: 6px 0;
 }
+
 .global_wrap .util li {
   height: 30px;
   line-height: 30px;
@@ -76,26 +79,32 @@ a:active {
   font-size: 12px;
   border-left: 1px solid #c4deff;
 }
+
 .util li:nth-child(1) {
   border: 0px;
 }
+
 .util a {
   font-size: 15px;
   color: black;
   text-decoration: none;
 }
+
 .search_box {
   width: 200px;
   height: 30px;
   display: flex;
   /* border: 1px solid black; */
 }
+
 .search {
   position: relative;
 }
+
 .search input:focus {
   outline: none;
 }
+
 #search {
   height: 30px;
   border: none;
@@ -113,19 +122,23 @@ a:active {
   /* border-left: 1px solid black; */
   /* padding: 0; */
 }
+
 .header-main {
   width: 100%;
   height: 70px;
 }
+
 .hmain {
   width: 1200px;
   margin: 0 auto;
 }
+
 .main {
   width: 1200px;
   height: 70px;
   display: flex;
 }
+
 .header-logo {
   width: 200px;
   height: 70px;
@@ -196,6 +209,7 @@ a:active {
   background: white;
   margin-top: 10px;
 }
+
 .menu-list li:hover ul li:hover {
   background: rgb(170, 168, 168);
   transition: 0.3s;
@@ -205,11 +219,13 @@ a:active {
   width: 100%;
   height: auto;
 }
+
 .center-main {
   width: 1200px;
   height: auto;
   margin: 0 auto;
 }
+
 .center-img {
   width: 100%;
   height: auto;
@@ -231,18 +247,21 @@ a:active {
   font-family: '맑은고딕';
   color: white;
   text-align: center;
-  line-height: 600px;
+  line-height: 500px;
 }
+
 .section {
   width: 1200px;
   height: auto;
   /* margin: 0 auto; */
 }
+
 .title {
   width: 100%;
   height: auto;
   /* margin: 0 auto; */
 }
+
 .title-main {
   margin: 0 auto;
   width: 1200px;
@@ -251,12 +270,14 @@ a:active {
   /* margin: 30px 0; */
   margin-top: 30px;
 }
+
 .title-main h2 {
   margin: 0 auto;
   width: 100px;
   height: 50px;
   line-height: 50px;
 }
+
 .title-main hr {
   width: 130px;
   height: 4px;
@@ -264,33 +285,39 @@ a:active {
   border: none;
   margin-top: 2px;
 }
+
 .title-list {
   width: 1200px;
   height: auto;
   display: flex;
   margin: 45px 0;
 }
+
 .title-img {
   width: 290px;
   height: auto;
   padding-left: 20px;
 }
+
 .title-img img {
   width: 250px;
   height: 250px;
   border-radius: 10px;
 }
+
 .title-txt {
   width: 900px;
   height: auto;
   /* margin: 0 20px; */
 }
+
 .title-txt h1 {
   width: 900px;
   height: auto;
   margin: 0;
   padding: 0 20px;
 }
+
 .title-txt h3 {
   width: 900px;
   height: auto;
@@ -298,6 +325,7 @@ a:active {
   padding: 0 20px;
   font-size: 25px;
 }
+
 .title-txt p {
   width: 900px;
   height: auto;
