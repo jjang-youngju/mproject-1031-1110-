@@ -140,7 +140,7 @@ a:active {
 
 .header-logo img {
   width: 190px;
-  height: 70px;
+  height: 80px;
 }
 
 .header-menu {
@@ -236,6 +236,7 @@ a:active {
   flex-basis: 20%;
   position: relative;
   margin: 0 auto;
+  margin-top: 2px;
   background: url(../img/bg/tour.jpg) no-repeat center;
   background-size: cover;
 }
