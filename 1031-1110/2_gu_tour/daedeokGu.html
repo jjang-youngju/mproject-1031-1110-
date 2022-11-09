@@ -33,12 +33,13 @@
                   <div class="search_box">
                     <div class="search">
                       <input
+                        onkeyup="enterkey()"
                         type="text"
                         id="search"
                         name="search"
                         placeholder="검색"
                       />
-                      <button><i class="bi bi-search"></i></button>
+                      <button id="bt"><i class="bi bi-search"></i></button>
                     </div>
                   </div>
                 </li>
@@ -428,10 +429,5 @@
       </div>
     </div>
   </body>
-  <script src="fivegu.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"
-  ></script>
+  <script src="gusearch.js"></script>
 </html>
