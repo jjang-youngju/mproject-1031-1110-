@@ -197,7 +197,7 @@ a:active {
 
 .menu-list li:hover ul li {
   position: relative;
-  width: 220px;
+  width: 250px;
   /* 30px 에서 50px로 조정 */
   height: 50px;
   line-height: 50px;
