@@ -24,12 +24,13 @@
                 <div class="search_box">
                   <div class="search">
                     <input
+                      onkeyup="enterkey()"
                       type="text"
                       id="search"
                       name="search"
                       placeholder="검색"
                     />
-                    <button><i class="bi bi-search"></i></button>
+                    <button id="bt"><i class="bi bi-search"></i></button>
                   </div>
                 </div>
               </li>
@@ -224,4 +225,5 @@
       bangbang = setTimeout(textchange, 1500);
     }
   </script>
+  <script src="mainsearch.js"></script>
 </html>
