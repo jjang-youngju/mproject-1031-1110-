@@ -188,8 +188,8 @@ a {
 .menu-list li:hover ul li {
   position: relative;
   width: 250px;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   /* cursor: pointer; */
   color: black;
@@ -197,7 +197,7 @@ a {
   margin-top: 10px;
 }
 .menu-list li:hover ul li:hover {
-  background: rgb(187, 243, 187);
+  background: rgb(170, 168, 168);
   transition: 0.3s;
 }
 
